@@ -2,6 +2,8 @@ package vdate
 
 import "time"
 
+// Formats the given `Time` instance
+// `df` is the predefined format for the date declared as constants in this module. e.g. vdate.DF_YYYYMMDD
 func FormatDate(t time.Time, df string) string {
 	format := ""
 	switch df {
